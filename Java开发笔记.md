@@ -5,10 +5,14 @@
 ### 概述
 
 
-
-Java运行与机器无关的二进制格式类文件.class	,JAVA前身Osk
-
+Java是静态面向对象编程语言。运行与机器无关的（平台独立与可移植性）二进制格式类文件.class	,JAVA前身Osk
 javac.exe是java程序的编译器，在/bin目录下
+
+Java应用场景：
+- 桌面应用程序
+- Web应用程序
+- 分布式系统
+- 嵌入式系统应用程序
 
 
 
@@ -41,7 +45,6 @@ public class HelloWorld {
 ```
 
 
-
 拓展：Eclipse环境配置
 
 
@@ -52,25 +55,22 @@ JAVA核心应用程序编程接口API文档
 
 
 
-
-
-
-
 ### Java编程基础
-
 
 
 #### 基本语法
 
-编程方法：大小写敏感，大驼峰式命名（类名），小驼峰命名（方法名）。源文件名与类名一致，文件名后缀 .java
+编程方法：
+1. 大小写敏感，大驼峰式命名（类名），小驼峰命名（方法名）
+2. 源文件名与类名一致，文件名后缀 .java
 
-主方法入口 ：所有的 Java 程序由 **public static void main(String[] args)** 方法开始执行。
 
+main函数 —— 主方法入口 ：所有的 Java 程序由 **public static void main(String[] args)** 方法开始执行。
 
 
 #### 修饰符
 
-- 访问控制修饰符 : default, public , protected, private
+- 访问控制修饰符 : default,protected,  public , private
 - 非访问控制修饰符 : final, abstract, static, synchronized
 
 
@@ -83,7 +83,10 @@ JAVA核心应用程序编程接口API文档
 
 ENTER 换行表示一行结束	TAB 缩进在每行增加易读性	SPACE 空格不会被编译同时增加易读性
 
-//单行注释	/*一行或多行注释 */	
+//单行注释	
+
+/*一行或
+多行注释 */	
 
 语句用; 分号分隔	{大括号包含语句块}
 
@@ -419,31 +422,32 @@ catch(异常类型3 异常的变量名3){
 
 ##### AWT和Swing
 
-图形界面GUI（窗口、标签、文本框、按钮），纯JAVA实现，组件在javax.swing.*下，类名以J开头
+Java抽象窗口工具集 —— AWT
+
+图形界面GUI（窗口、标签、文本框、按钮），纯JAVA实现，组件在javax.swing. 下，类名以J开头
 
 元素即组件component
 
 顶层容器属于窗口类组件，可以独立显示，一个图形界面至少需要一个窗口，例如:
-
-
-
-1	JFrame	一个普通的窗口（绝大多数 Swing 图形界面程序使用 JFrame 作为顶层容器）
-2	JDialog	对话框
-2.2 中间容器：充当（若干）基本组件的载体，不可独立显示，添加到窗口中。
+1. JFrame:	一个普通的窗口（绝大多数 Swing 图形界面程序使用 JFrame 作为顶层容器）
+2. JDialog:	对话框
+3. 中间容器：充当（若干）基本组件的载体，不可独立显示，添加到窗口中。
 
 常用的中间容器（面板）:
 
-1	JPanel	一般轻量级面板容器组件
-2	JScrollPane	带滚动条的，可以水平和垂直滚动的面板组件
-3	JSplitPane	分隔面板
-4	JTabbedPane	选项卡面板
-5	JLayeredPane	层级面板
+1. JPanel	一般轻量级面板容器组件
+2. JScrollPane	带滚动条的，可以水平和垂直滚动的面板组件
+3. JSplitPane	分隔面板
+4. JTabbedPane	选项卡面板
+5. JLayeredPane	层级面板
+
+
 特殊的中间容器:
 
-1	JMenuBar	菜单栏
-2	JToolBar	工具栏
-3	JPopupMenu	弹出菜单
-4	JInternalFrame	内部窗口
+1. JMenuBar	菜单栏
+2. JToolBar	工具栏
+3. JPopupMenu	弹出菜单
+4. JInternalFrame	内部窗口
 
 常用的简单的基本组件（container）:
 
@@ -803,8 +807,4 @@ Thead类方法
 线程的优先级（用整数表示）：1 （Thread.MIN_PRIORITY ） - 10 （Thread.MAX_PRIORITY ）
 
 线程的基本控制：挂起、停止、恢复。线程的互斥、同步和死锁
-
-
-
-
 
