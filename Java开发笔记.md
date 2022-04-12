@@ -155,25 +155,13 @@ ENTER 换行表示一行结束	TAB 缩进在每行增加易读性	SPACE 空格�
 
 <u>**数据类型**</u>
 
-byte 8位
-
-short 16位
-
-int 32位（整数默认int类型）
-
-long 64位
-
-float 32位（单精度）
-
-double 64位（双精度，小数默认为double float）
-
 boolean：true/false	(不能进行类型转换)
 
-char： 单一的16位Unicode字符，\u0000 - \uffff(十进制0到65535)
+char：\u0000 - \uffff(十进制0到65535)
 
 不同类型数据自动转换规则：
 
-byte，short，char < int < long < float < double
+byte(8) - 0，short(16) - 0，char Unicode字符(16) - '\u000' < int(32) - 0 < long(64) - 0L < float单精度浮点(32) - 0.0f < double双精度(64) - 0.0d
 
 ```
 //强制类型转换实例
