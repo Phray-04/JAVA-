@@ -414,6 +414,13 @@ Java抽象窗口工具集 —— AWT
 
 图形界面GUI（窗口、标签、文本框、按钮），纯JAVA实现，组件在javax.swing. 下，类名以J开头
 
+swing的4种顶层容器
+
+- JFrame
+- JApplet
+- JDialog
+- JWindow
+
 元素即组件component
 
 顶层容器属于窗口类组件，可以独立显示，一个图形界面至少需要一个窗口，例如:
