@@ -1,6 +1,9 @@
 # JAVA-Summarize
 
-Java语言知识点总结及小项目实例（持续更新...）
+Java语言知识点总结及项目实例
+
+文章原地址：https://github.com/Phray-04/JAVA-Summarize
+
 
 ### 目录
 
