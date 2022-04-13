@@ -2,8 +2,6 @@
 
 Java语言知识点总结及项目实例
 
-文章原地址：https://github.com/Phray-04/JAVA-Summarize
-
 
 ### 目录
 
@@ -19,6 +17,7 @@ Java语言知识点总结及项目实例
 ## Java GUI —— Swing
 
 基于Java Swing开发基本功能模块的GUI测试
+https://github.com/Phray-04/JAVA-Summarize/blob/main/Swing%E5%BC%80%E5%8F%91.md
 
 
 
