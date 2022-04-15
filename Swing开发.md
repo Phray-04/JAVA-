@@ -11,16 +11,19 @@ swing的实现不包含任何本地代码（轻量级），不受硬件平台限
 
 1. 选取组件（元素即组件component）
    - 选取顶层容器[^1]：JFrame 
-   - 选取中间容器[^2]：JPanel 
-   - 选取组件容器[^3]：JMenuBar   |   JToolBar  
-   - 选取基本组件[^4]: JLabel | JButton | JPasswordField  | JTextArea | JTable  | JRadioButton  | JCheckBox | JComboBox 
+   - 选取中间容器[^2]：JPanel   | JDialog
+   - 选取组件容器[^3]：JMenuBar   |   JToolBar
+   - 选取基本组件[^4]: JLabel | JButton | JPasswordField  | JTextArea | JTable  | JRadioButton  | JCheckBox | JComboBox |  JSlider
    - 选取功能组件[^5]: JFileChooser   |   JColorChooser
 
 
 2. 设计布局
-  使用LayoutManager进行布局的设计
+
+   使用LayoutManager进行布局的设计
   
 3. 响应事件
+
+   按钮、菜单栏
 
 
 ### 布局管理器LayoutManager（将JComponent添加到面板容器JPanel中）:
@@ -39,5 +42,5 @@ swing的实现不包含任何本地代码（轻量级），不受硬件平台限
 [^1]:顶层容器： 1. JFrame（绝大多数场景） 2. JApplet 3. JDialog:对话框 4. JWindow   (仅4个)
 [^2]:中间容器： 1. JPanel	一般轻量级面板容器组件  2. JScrollPane	带滚动条的，可以水平和垂直滚动的面板组件  3. JSplitPane	分隔面板  4. JTabbedPane	选项卡面板  5. JLayeredPane	层级面板
 [^3]:组件容器:  1. JMenuBar	菜单栏 2.  JToolBar	工具栏 3.  JPopupMenu	弹出菜单 4. JInternalFrame	内部窗口
-[^4]:基本组件:  1. JLabel	标签  2. JButton	按钮 3. JRadioButton 单选按钮  4. JCheckBox 复选框  5. JToggleButton 开关按钮  6. JTextField	文本框  7. JPasswordField	密码框  8. JTextArea 文本区域  9. JComboBox 下拉列表框  10. JList 列表  11. JProgressBar 进度条  12. JSlider 块  13. JTable 表格  14. JTree 树
+[^4]:基本组件:  1. JLabel	标签  2. JButton	按钮 3. JRadioButton 单选按钮  4. JCheckBox 复选框  5. JToggleButton 开关按钮  6. JTextField	文本框  7. JPasswordField	密码框  8. JTextArea 文本区域  9. JComboBox 下拉列表框  10. JList 列表  11. JProgressBar 进度条  12. JSlider 滑块  13. JTable 表格  14. JTree 树  15. JSeparator 分隔线  16. JProgressBar 显示任务进度
 [^5]:功能组件:  1. JFileChooser 文件选取器  2. JColorChooser	颜色选取器 3. JOptionPane标准对话框 4. JMenuItem&JMenu菜单栏
