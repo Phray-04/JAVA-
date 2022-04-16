@@ -22,9 +22,7 @@ swing的实现不包含任何本地代码（轻量级），不受硬件平台限
 
 2. 设计布局[^6]
 
-   使用LayoutManager布局管理的
-      1. GridBagLayout	网格袋布局
-      2. null绝对布局
+   使用LayoutManager布局管理的null绝对布局
   
 3. 响应事件
 
